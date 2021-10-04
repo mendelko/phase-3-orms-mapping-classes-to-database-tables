@@ -3,5 +3,14 @@
 require 'pry'
 require_relative '../config/environment'
 
+Song.create_table
+hello = Song.new(name: "Hello", album: "25")
+
+hello.save
+
+ninety_nine_problems = Song.new(name: "99 Problems", album: "The Black Album")
+
+ninety_nine_problems.save
+
 binding.pry
 "pls"
